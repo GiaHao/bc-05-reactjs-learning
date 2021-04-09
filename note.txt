@@ -3,3 +3,6 @@ JSX giúp chúng ta viết html và js vào một file duy nhất
 lợi ích và tiêu chí để chia component 
   - tái sử dụng lại (ưu tiên)
   - dễ quản lý và mở rộng úng dụng
+có 2 loại component
+  - dạng class
+  - dạng function
