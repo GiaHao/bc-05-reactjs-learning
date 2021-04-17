@@ -7,17 +7,19 @@ import Footer from "./components/Footer";
 import ShowRoomCar from "./show-room-car/ShowRoomCar";
 import RenderWithMap from "./render-with-map/RenderWithMap";
 import Parent from "./props/Paprent";
+import AppXucXac from "./AppXucXac/AppXucXac";
 
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Carousel />
       <ProductList />
-      <Footer /> */}
-      <ShowRoomCar />
+      <Footer />
+      {/* <ShowRoomCar /> */}
       {/* <RenderWithMap /> */}
       {/* <Parent /> */}
+      {/* <AppXucXac /> */}
     </div>
   );
 }
