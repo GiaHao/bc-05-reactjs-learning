@@ -4,16 +4,26 @@ import XucXac from "./XucXac";
 class BanChoi extends Component {
   renderDanhSachXucXac = () => {
     const { xucXacs } = this.props;
-    return xucXacs.map((item) => {
-      return <XucXac item={item} />;
+    return xucXacs.map((item, index) => {
+      return <XucXac item={item} key={index} />;
     });
+  };
+
+  handleChoiceTaiOrXiu = (taiOrXiu) => {
+    const { handleTaiOrXiu } = this.props;
+    handleTaiOrXiu(taiOrXiu);
   };
 
   render() {
     return (
       <div className="row text-center">
         <div className="col-4">
-          <button className="bg-danger display-4 p-5 text-light">TÀI </button>
+          <button
+            onClick={() => this.handleChoiceTaiOrXiu(true)}
+            className="bg-danger display-4 p-5 text-light"
+          >
+            TÀI{" "}
+          </button>
         </div>
         <div className="col-4">
           <div className="d-flex justify-content-center">
@@ -21,7 +31,12 @@ class BanChoi extends Component {
           </div>
         </div>
         <div className="col-4">
-          <button className="bg-dark display-4 p-5 text-light">XỈU </button>
+          <button
+            onClick={() => this.handleChoiceTaiOrXiu(false)}
+            className="bg-dark display-4 p-5 text-light"
+          >
+            XỈU{" "}
+          </button>
         </div>
       </div>
     );

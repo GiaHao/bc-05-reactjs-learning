@@ -12,14 +12,14 @@ import AppXucXac from "./AppXucXac/AppXucXac";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Carousel />
       <ProductList />
-      <Footer />
+      <Footer /> */}
       {/* <ShowRoomCar /> */}
       {/* <RenderWithMap /> */}
       {/* <Parent /> */}
-      {/* <AppXucXac /> */}
+      <AppXucXac />
     </div>
   );
 }
